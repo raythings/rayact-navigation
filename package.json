@@ -1,0 +1,41 @@
+{
+  "name": "@rayact/navigation",
+  "version": "0.0.1",
+  "description": "react-navigation bindings for rayact (custom navigator over @react-navigation/core)",
+  "main": "src/index.tsx",
+  "types": "src/index.tsx",
+  "exports": {
+    ".": "./src/index.tsx",
+    "./native": "./src/native.tsx",
+    "./stack": "./src/stack.tsx",
+    "./bottom-tabs": "./src/bottom-tabs.tsx"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "@rayact/react": "*",
+    "react": "^18.0.0 || ^19.0.0",
+    "@rayact/runtime": "*"
+  },
+  "dependencies": {
+    "@react-navigation/core": "*",
+    "@react-navigation/routers": "*"
+  },
+  "license": "MIT",
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raythings/rayact-navigation.git"
+  },
+  "homepage": "https://github.com/raythings/rayact-navigation#readme",
+  "bugs": {
+    "url": "https://github.com/raythings/rayact-navigation/issues"
+  }
+}
